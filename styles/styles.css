@@ -81,6 +81,7 @@ form {
         "i1 i2"
         "ta ta"
         "vi bt";
+    margin-top: 20px;
 }
 
 input,
@@ -107,6 +108,6 @@ textarea {
 }
 
 #btn-submit:hover {
-    color: white;
     background: darkgreen;
+    color: white;
 }
