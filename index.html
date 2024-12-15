@@ -64,6 +64,55 @@
                 <video src="./video.mp4" autoplay muted loop>Voir la vidéo</video>
             </div>
         </section>
+        <section>
+            <h6>titre h6 - Les formulaires</h6>
+            <form action="ce qu'il se passe quand on valide le formulaire">
+                <label for="name">Nom</label>
+                <input type="text" id="name" placeholder="taper votre nom">
+                <br>
+                <label for="age">Age</label>
+                <!-- soit on met un placeholder soit une value | value="18" -->
+                <input type="number" id="age" placeholder="taper votre age">
+
+                <br>
+
+                <!-- input de type select -->
+                <label for="gender">Genre</label>
+                <select id="gender">
+                    <option value="homme">Homme</option>
+                    <option value="femme" selected>Femme</option>
+                    <option value="autre">Autre</option>
+                </select>
+
+                <br>
+
+                <!-- input de type radio -->
+                <input type="radio" name="type" id="human">
+                <label for="human">Humain</label>
+
+                <input type="radio" name="type" id="animal">
+                <label for="animal">Animal</label>
+
+                <input type="radio" name="type" id="vegetable" checked>
+                <label for="vegetable">Plante</label>
+
+                <br>
+
+                <!-- champs textarea pour ecrire des messages plus long qu'un input -->
+                <textarea placeholder="Votre message"></textarea>
+
+                <br>
+
+                <!-- input de type checkbox -->
+                <input type="checkbox" id="cgv">
+                <label for="cgv">Accepter les conditions générales</label>
+
+                <br>
+
+                <!-- bouton pour valider | inpiut de type submit -->
+                <input type="submit" value="Valider">
+            </form>
+        </section>
     </main>
     <footer></footer>
 </body>
