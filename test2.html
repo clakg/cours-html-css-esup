@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://127.0.0.1:5500/index.html?type=on#ancre-form -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- titre de la page en commentaires en faisant ctrl + / -->
+    <title>test2</title>
+    <!-- icone de l'onglet -->
+    
+    
+<link rel="shortcut icon" href="http://127.0.0.1:5500/images/logo-favicon-html.png" type="image/x-icon"><link rel="stylesheet" href="./test2_files/styles.css"></head>
+
+<body style="">
+    <!-- cration d'un liste dans une barre de navigation -->
+    <nav>
+        <ul>
+            <li>liste non ordonnée 1</li>
+            <li>liste non ordonnée 2</li>
+            <li>liste non ordonnée 3</li>
+            <li>
+                <a href="http://127.0.0.1:5500/index.html?type=on#ancre-form">liste non ordonnée mais ancre formulaire</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <!-- un seul h1 par page recommandé + h1 est de type bloc ie qui prend toute la largeur de la page-->
+        <h1>titre h1 - type de texte</h1>
+        <p>
+            texte classique
+        </p>
+        <p>
+            <em>texte en italique</em>
+        </p>
+        <p>
+            <strong>texte en gras</strong>
+        </p>
+        <p>
+            <!-- on tape du lorem ipsum en ecrivant "lorem" + nombre de mots -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis debitis quis hic sequi vel, laboriosam
+            numquam omnis odio dolorem cumque culpa modi minus molestiae consequuntur velit error praesentium accusamus
+            amet?
+        </p>
+    </header>
+    <main>
+        <section>
+            <h2>titre h2 - Liste ordonnée</h2>
+            <ol>
+                <li>liste ordonné 1</li>
+                <li>liste ordonné 2</li>
+                <li>liste ordonné 3</li>
+            </ol>
+        </section>
+        <section>
+            <h3>titre h3 - Image en html</h3>
+            <img src="./test2_files/image-html.jpg" alt="texte-pour-le-referencement-et-pour-l-accessibilite" height="200px" width="auto">
+        </section>
+        <section>
+            <div>
+                <h4>titre h4 - les liens</h4>
+                <!-- création d'un lien a href, à savoir que a = anchor ou ancre en francais | ouvrir un autre onglet avec le target blank-->
+                <a href="http://htmlcheatsheet.com/" target="_blank">Lien HTML Cheatsheet</a>
+            </div>
+            <div>
+                <!-- on integre une icone dans le titre avec <span></span> et une vidéo via pixabey.com-->
+                <h5><span>📹</span> titre h5 - intégrer une vidéo</h5>
+                <video src="./videos/video.mp4" autoplay="" muted="" loop="">Voir la vidéo</video>
+            </div>
+        </section>
+        <section id="ancre-form">
+            <h6>titre h6 - Les formulaires</h6>
+            <form action="http://127.0.0.1:5500/ce%20qu&#39;il%20se%20passe%20quand%20on%20valide%20le%20formulaire">
+                <label for="name">Nom</label>
+                <input type="text" id="name" placeholder="taper votre nom">
+                <br>
+                <label for="age">Age</label>
+                <!-- soit on met un placeholder soit une value | value="18" -->
+                <input type="number" id="age" placeholder="taper votre age">
+
+                <br>
+
+                <!-- input de type select -->
+                <label for="gender">Genre</label>
+                <select id="gender">
+                    <option value="homme">Homme</option>
+                    <option value="femme" selected="">Femme</option>
+                    <option value="autre">Autre</option>
+                </select>
+
+                <br>
+
+                <!-- input de type radio -->
+                <input type="radio" name="type" id="human">
+                <label for="human">Humain</label>
+
+                <input type="radio" name="type" id="animal">
+                <label for="animal">Animal</label>
+
+                <input type="radio" name="type" id="vegetable" checked="">
+                <label for="vegetable">Plante</label>
+
+                <br>
+
+                <!-- champs textarea pour ecrire des messages plus long qu'un input -->
+                <textarea placeholder="Votre message"></textarea>
+
+                <br>
+
+                <!-- input de type checkbox -->
+                <input type="checkbox" id="cgv">
+                <label for="cgv">Accepter les conditions générales</label>
+
+                <br>
+
+                <!-- bouton pour valider | inpiut de type submit -->
+                <input type="submit" value="Valider">
+            </form>
+        </section>
+
+        <br>
+
+        <div class="flexbox">
+            <h2>Flexbox</h2>
+            <ul>
+                <li>boite 1</li>
+                <li>boite 2</li>
+                <li>boite 3</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <!-- mail et envoie de fichier | ouverture de la boite mail -->
+        <a href="mailto:clakg@icloud.com">Contactez-moi</a>
+        <br>
+        <a href="http://127.0.0.1:5500/files/fichier.txt" download="CGV à télécharger">Télécharger les CGV</a>
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
