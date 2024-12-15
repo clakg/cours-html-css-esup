@@ -129,3 +129,15 @@ textarea {
     top: 0;
     right: 0;
 }
+
+#circle2 {
+    height: 80px;
+    width: 80px;
+    border-radius: 150px;
+    background: red;
+    position: absolute;
+    /* centrage en son centre */
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px;
+}
