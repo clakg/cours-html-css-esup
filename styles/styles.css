@@ -41,6 +41,11 @@ h2 {
     margin-top: 20px;
 }
 
+.flexbox ul {
+    padding: 0;
+    display: flex;
+}
+
 .flexbox li {
     background: red;
     height: 100px;
