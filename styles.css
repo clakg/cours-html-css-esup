@@ -1,5 +1,9 @@
 body {
-    background-color: brown;
+    /* background-color: brown; */
+    /* rajout d'une image en background */
+    background: url(./image-background.jpg) center/cover;
+    /* 100vh = 100% de la taille de l'ecran */
+    min-height: 100vh;
 }
 
 h1 {
