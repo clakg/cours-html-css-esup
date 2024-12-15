@@ -36,11 +36,13 @@ h2 {
 
 /* FLEXBOX */
 .flexbox,
-.grid {
+.grid,
+.absolute {
     border: 2px solid yellow;
     border-radius: 10px;
     padding: 10px;
     margin-top: 20px;
+    min-height: 150px;
 }
 
 .flexbox ul {
@@ -110,4 +112,20 @@ textarea {
 #btn-submit:hover {
     background: darkgreen;
     color: white;
+}
+
+/* ABSOLUTE */
+
+.absolute {
+    position: relative;
+}
+
+#circle1 {
+    height: 100px;
+    width: 100px;
+    border-radius: 150px;
+    background: pink;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
