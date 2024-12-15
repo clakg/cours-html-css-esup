@@ -6,6 +6,18 @@ body {
     min-height: 100vh;
 }
 
+main {
+    background: rgba(255, 255, 255, 0.274);
+    border: 4px solid rgba(241, 234, 234, 0.8);
+    border-radius: 2%;
+    /* ou border-radius: 20px 20px 0 0 | dans le sens des aiguilles d'une montre */
+    box-shadow: 0 0 20px 3px rgba(255, 255, 255, 0.877);
+    height: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    width: 90%;
+}
+
 h1 {
     /* couleur en rgba (a : opacity), #000ad4, ou nom de la couleur */
     color: rgba(255, 255, 255, 0.8);
@@ -15,4 +27,8 @@ h1 {
     text-align: center;
     text-shadow: 0 0 0 black;
     text-transform: uppercase;
+}
+
+h2 {
+    margin: 0;
 }
