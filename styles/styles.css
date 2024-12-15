@@ -30,5 +30,13 @@ h1 {
 }
 
 h2 {
+    /* on enleve les configuration du navigateur pour le h2 */
     margin: 0;
+}
+
+.flexbox {
+    border: 2px solid yellow;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
 }
