@@ -34,7 +34,9 @@ h2 {
     margin: 0;
 }
 
-.flexbox {
+/* FLEXBOX */
+.flexbox,
+.grid {
     border: 2px solid yellow;
     border-radius: 10px;
     padding: 10px;
@@ -57,4 +59,54 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* GRID */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.grid img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1 fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "i1 i2"
+        "ta ta"
+        "vi bt";
+}
+
+input,
+textarea {
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    font-size: 1.1 rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+    margin: 5px;
+    padding: 10px;
+}
+
+textarea {
+    grid-area: ta;
+    height: 80px;
+    resize: none;
+}
+
+#btn-submit {
+    background: green;
+    cursor: pointer;
+    grid-area: bt;
+    transition: 0.2s;
+}
+
+#btn-submit:hover {
+    color: white;
+    background: darkgreen;
 }
